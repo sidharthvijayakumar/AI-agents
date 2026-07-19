@@ -1,0 +1,16 @@
+{
+  "servers": {
+    "kubernetes": {
+      "type": "stdio",
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-v",
+        "${HOME}/.kube/config:/home/appuser/.kube/config",
+        "mcp/kubernetes"
+      ]
+    }
+  }
+}

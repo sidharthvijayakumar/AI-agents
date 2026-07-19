@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: crash-pod
+  labels:
+    app: crash-test
+spec:
+  restartPolicy: Always
+  containers:
+  - name: crasher
+    image: busybox:latest
+    command: ["sh", "-c", "echo 'Simulating crash...'; sleep 5; exit 1"]
