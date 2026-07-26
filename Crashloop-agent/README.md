@@ -6,6 +6,8 @@ Kind cluster
 Create the kind cluster with this config
 ```bash
 kind create cluster --config=kind-config.yaml
+```
+Use this config file to create the cluster
 ```yaml
 kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4
