@@ -29,8 +29,8 @@ kubeadmConfigPatches:
 ```bash
 kind get kubeconfig --name kind > ~/.kube/config_mcp
 ```
----
 Update the server with ```server: https://kind-control-plane:6443```
+---
 3. Create config for running kubectl
 ```bash
 kind get kubeconfig --name kind > ~/.kube/config
@@ -43,8 +43,7 @@ Select kubernetes mcp and start the server
 ```bash
 docker exec -it $(docker ps -q --filter ancestor=mcp/kubernetes) bash
 ```
-
-You will then need to open codex chat(cmd+shift+p -> select codex chat):
+You will then need to open codex chat(cmd+shift+p -> select copilot chat):
 
 Give the below prompt:
 ```text
