@@ -1,5 +1,7 @@
 # AI-agents
 Basic setup needed:
+1. Kind cluster
+2. Copilot extension installation on vscode
 
 Kind cluster
 ---
