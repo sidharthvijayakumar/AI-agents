@@ -39,11 +39,12 @@ kind get kubeconfig --name kind > ~/.kube/config
 ---
 4. Now start the mcp server from vscode (cmd+shift+p-> MCP: List servers)
 Select kubernetes mcp and start the server
-
+---
 5. Now config if you are able to run kubectl commands from mcp kubernetes container
 ```bash
 docker exec -it $(docker ps -q --filter ancestor=mcp/kubernetes) bash
 ```
+---
 You will then need to open codex chat(cmd+shift+p -> select copilot chat):
 
 Give the below prompt:
