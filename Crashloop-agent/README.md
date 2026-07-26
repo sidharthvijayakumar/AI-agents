@@ -48,6 +48,6 @@ docker exec -it $(docker ps -q --filter ancestor=mcp/kubernetes) bash
 You will then need to open codex chat(cmd+shift+p -> select copilot chat):
 
 Give the below prompt:
-```text
+```bash
 Use crashloop-agent.md file and then analyse what are the pods which are crashing and give me suggestions to fix. Create a new file called summary.md which says the fix. Use mcp to connect to cluster
 ```
