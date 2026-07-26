@@ -1,0 +1,22 @@
+#Ensure that the kubeconfig file is present at the specified path and that the Docker image "mcp/kubernetes" is available locally or can be pulled from a registry.
+#Ensure that in .kube/config-mcp, the server is set to https://poc-cluster-control-plane:6443 cause https://127.0.0.1:50200 does not work
+{
+  "servers": {
+    "kubernetes": {
+      "type": "stdio",
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "--name",
+        "k8s-mcp",
+        "--network",
+        "kind",
+        "-v",
+        "/Users/sidharth/.kube/config_mcp:/home/appuser/.kube/config",
+        "mcp/kubernetes"
+      ]
+    }
+  }
+}

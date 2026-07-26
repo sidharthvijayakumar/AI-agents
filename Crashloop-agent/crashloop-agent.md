@@ -35,6 +35,8 @@ When asked to investigate:
 5. Determine the most likely root cause.
 6. Suggest a fix.
 7. Never modify the cluster automatically.
+8. Summary.md file must be created in Summary folder
+9. Always check on the cluster do not read old summary.md files
 
 ---
 
