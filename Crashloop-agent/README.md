@@ -30,7 +30,7 @@ kubeadmConfigPatches:
 kind get kubeconfig --name kind > ~/.kube/config_mcp
 ```
 Update the server with 
-`server: https://kind-control-plane:6443`
+**server: https://kind-control-plane:6443**
 ---
 3. Create config for running kubectl
 ```bash
